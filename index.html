@@ -4,33 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Untuk Awak ❤️</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1974&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      overflow:hidden;
+    }
+
+    nav{
+      width:100%;
+      padding:25px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,0.08);
+    }
+
+    nav h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      opacity:0.7;
+    }
+
+    .hero{
+      height:85vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .box{
+      width:850px;
+      padding:60px;
+      border-radius:30px;
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(15px);
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    .small-text{
+      letter-spacing:4px;
+      margin-bottom:20px;
+      font-size:15px;
+      opacity:0.9;
+    }
+
+    h2{
+      font-size:70px;
+      margin-bottom:25px;
+    }
+
+    .desc{
+      font-size:22px;
+      line-height:1.8;
+      opacity:0.95;
+    }
+
+    .button-group{
+      margin-top:40px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    button{
+      padding:15px 35px;
+      border:none;
+      border-radius:15px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn1{
+      background:white;
+      color:#ff4f81;
+    }
+
+    .btn2{
+      background:transparent;
+      border:2px solid white;
+      color:white;
+    }
+
+    button:hover{
+      transform:translateY(-5px) scale(1.03);
+    }
+
+    #secretMessage{
+      margin-top:35px;
+      font-size:28px;
+      font-weight:bold;
+      color:#ffd6e7;
+    }
+
+    .bottom-text{
+      margin-top:60px;
+      opacity:0.8;
+      font-size:16px;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        padding:20px;
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .box{
+        padding:35px 25px;
+      }
+
+      h2{
+        font-size:45px;
+      }
+
+      .desc{
+        font-size:18px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
   <nav>
     <h1>❤️ Untuk Awak</h1>
+
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="memories.html">Memories</a></li>
-      <li><a href="letter.html">Letter</a></li>
-      <li><a href="countdown.html">Countdown</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Memories</a></li>
+      <li><a href="#">Letter</a></li>
+      <li><a href="#">Gallery</a></li>
     </ul>
   </nav>
 
   <section class="hero">
-    <h2>Hai Sayang 🌸</h2>
-    <p>
-      Kalau awak tengah baca ni...
-      maksudnya saya memang buat website ni khas untuk awak.
-    </p>
 
-    <button onclick="showMessage()">Tekan Sini 💌</button>
+    <div class="box">
 
-    <div id="secretMessage"></div>
+      <p class="small-text">
+        WEBSITE KHAS UNTUK ORANG PALING SPECIAL ✨
+      </p>
+
+      <h2>
+        Hai Awak 🌸
+      </h2>
+
+      <p class="desc">
+        Saya tahu mungkin awak penat dekat asrama...
+        banyak benda nak fikir...
+        banyak assignment nak siapkan...
+        tapi saya cuma nak awak tahu yang ada seseorang dekat sini
+        yang selalu fikir pasal awak ❤️
+      </p>
+
+      <div class="button-group">
+
+        <button class="btn1" onclick="showMessage()">
+          Tekan Sini 💌
+        </button>
+
+        <button class="btn2">
+          Surprise Lagi ✨
+        </button>
+
+      </div>
+
+      <div id="secretMessage"></div>
+
+      <p class="bottom-text">
+        dibuat khas hanya untuk awak 🌙
+      </p>
+
+    </div>
+
   </section>
 
-  <script src="script.js"></script>
+  <script>
+
+    function showMessage(){
+
+      document.getElementById("secretMessage").innerHTML =
+      "Saya rindu awak ❤️";
+
+    }
+
+  </script>
+
 </body>
 </html>
