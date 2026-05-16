@@ -6,6 +6,7 @@
   <title>Untuk Awak ❤️</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -14,41 +15,59 @@
     }
 
     body{
+
       min-height:100vh;
+
       background:
-      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-      url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1974&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('gambar.jpg');
+
       background-size:cover;
       background-position:center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+
       color:white;
-      overflow:hidden;
+      overflow-x:hidden;
     }
 
     nav{
+
       width:100%;
-      padding:25px 60px;
+      padding:20px 25px;
+
       display:flex;
       justify-content:space-between;
       align-items:center;
+      flex-wrap:wrap;
+      gap:15px;
+
       backdrop-filter:blur(10px);
       background:rgba(255,255,255,0.08);
+
     }
 
     nav h1{
-      font-size:28px;
+      font-size:24px;
     }
 
     nav ul{
+
       display:flex;
       list-style:none;
-      gap:20px;
+      gap:15px;
+      flex-wrap:wrap;
+
     }
 
     nav a{
+
       text-decoration:none;
       color:white;
       font-weight:bold;
       transition:0.3s;
+      font-size:15px;
+
     }
 
     nav a:hover{
@@ -56,111 +75,187 @@
     }
 
     .hero{
-      height:85vh;
+
+      min-height:85vh;
+
       display:flex;
       justify-content:center;
       align-items:center;
+
       text-align:center;
-      padding:20px;
+      padding:30px 15px;
+
     }
 
     .box{
-      width:850px;
-      padding:60px;
+
+      width:100%;
+      max-width:850px;
+
+      padding:50px 25px;
+
       border-radius:30px;
-      background:rgba(255,255,255,0.1);
+
+      background:rgba(255,255,255,0.10);
+
       backdrop-filter:blur(15px);
+
       box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
     }
 
     .small-text{
-      letter-spacing:4px;
-      margin-bottom:20px;
-      font-size:15px;
+
+      letter-spacing:3px;
+      margin-bottom:18px;
+      font-size:13px;
       opacity:0.9;
+
     }
 
     h2{
-      font-size:70px;
+
+      font-size:60px;
       margin-bottom:25px;
+      line-height:1.2;
+
     }
 
     .desc{
-      font-size:22px;
+
+      font-size:20px;
       line-height:1.8;
       opacity:0.95;
+
     }
 
     .button-group{
+
       margin-top:40px;
+
       display:flex;
       justify-content:center;
       gap:20px;
       flex-wrap:wrap;
+
     }
 
     button{
-      padding:15px 35px;
+
+      padding:15px 30px;
+
       border:none;
       border-radius:15px;
-      font-size:18px;
+
+      font-size:17px;
       cursor:pointer;
+
       transition:0.3s;
       font-weight:bold;
+
     }
 
     .btn1{
+
       background:white;
       color:#ff4f81;
+
     }
 
     .btn2{
+
       background:transparent;
       border:2px solid white;
       color:white;
+
     }
 
     button:hover{
+
       transform:translateY(-5px) scale(1.03);
+
     }
 
     #secretMessage{
+
       margin-top:35px;
-      font-size:28px;
+      font-size:26px;
       font-weight:bold;
       color:#ffd6e7;
+
     }
 
     .bottom-text{
+
       margin-top:60px;
       opacity:0.8;
-      font-size:16px;
+      font-size:15px;
+
     }
+
+    /* PHONE SIZE */
 
     @media(max-width:768px){
 
+      body{
+        background-attachment:scroll;
+      }
+
       nav{
-        padding:20px;
-        flex-direction:column;
-        gap:15px;
+
+        justify-content:center;
+        text-align:center;
+
+      }
+
+      nav h1{
+        width:100%;
       }
 
       nav ul{
-        flex-wrap:wrap;
+
         justify-content:center;
+
       }
 
       .box{
-        padding:35px 25px;
+
+        padding:40px 20px;
+        border-radius:25px;
+
       }
 
       h2{
-        font-size:45px;
+
+        font-size:42px;
+
       }
 
       .desc{
-        font-size:18px;
+
+        font-size:17px;
+        line-height:1.7;
+
       }
+
+      button{
+
+        width:100%;
+
+      }
+
+      .button-group{
+
+        gap:15px;
+
+      }
+
+      #secretMessage{
+
+        font-size:22px;
+
+      }
+
     }
 
   </style>
@@ -169,6 +264,7 @@
 <body>
 
   <nav>
+
     <h1>❤️ Untuk Awak</h1>
 
     <ul>
@@ -177,6 +273,7 @@
       <li><a href="#">Letter</a></li>
       <li><a href="#">Gallery</a></li>
     </ul>
+
   </nav>
 
   <section class="hero">
