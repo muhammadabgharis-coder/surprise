@@ -3,45 +3,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Letter</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Letter Untuk Awak ❤️</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+
+      min-height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('gambar-letter.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+
+      color:white;
+
+      overflow-x:hidden;
+
+    }
+
+    nav{
+
+      width:100%;
+      padding:20px 25px;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:15px;
+
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,0.08);
+
+    }
+
+    nav h1{
+      font-size:24px;
+    }
+
+    nav ul{
+
+      display:flex;
+      list-style:none;
+      gap:15px;
+      flex-wrap:wrap;
+
+    }
+
+    nav a{
+
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+      font-size:15px;
+
+    }
+
+    nav a:hover{
+      opacity:0.7;
+    }
+
+    .main{
+
+      min-height:85vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      padding:30px 15px;
+
+    }
+
+    .letter-box{
+
+      width:100%;
+      max-width:850px;
+
+      background:rgba(255,255,255,0.10);
+
+      backdrop-filter:blur(15px);
+
+      padding:50px 35px;
+
+      border-radius:30px;
+
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
+    }
+
+    .small-text{
+
+      text-align:center;
+      letter-spacing:3px;
+      font-size:13px;
+      margin-bottom:20px;
+      opacity:0.9;
+
+    }
+
+    h2{
+
+      text-align:center;
+      font-size:55px;
+      margin-bottom:35px;
+
+    }
+
+    .letter{
+
+      font-size:20px;
+      line-height:2;
+      opacity:0.95;
+
+    }
+
+    .letter p{
+
+      margin-bottom:25px;
+
+    }
+
+    .signature{
+
+      margin-top:50px;
+
+      text-align:right;
+
+      font-size:22px;
+      font-style:italic;
+      color:#ffd6e7;
+
+    }
+
+    .love-btn{
+
+      margin-top:40px;
+      text-align:center;
+
+    }
+
+    button{
+
+      padding:15px 30px;
+
+      border:none;
+      border-radius:15px;
+
+      background:white;
+      color:#ff4f81;
+
+      font-size:17px;
+      font-weight:bold;
+
+      cursor:pointer;
+
+      transition:0.3s;
+
+    }
+
+    button:hover{
+
+      transform:translateY(-5px) scale(1.03);
+
+    }
+
+    #message{
+
+      margin-top:30px;
+
+      text-align:center;
+
+      font-size:28px;
+      font-weight:bold;
+
+      color:#ffd6e7;
+
+    }
+
+    @media(max-width:768px){
+
+      nav{
+
+        justify-content:center;
+        text-align:center;
+
+      }
+
+      nav h1{
+        width:100%;
+      }
+
+      nav ul{
+
+        justify-content:center;
+
+      }
+
+      .letter-box{
+
+        padding:35px 20px;
+        border-radius:25px;
+
+      }
+
+      h2{
+
+        font-size:38px;
+
+      }
+
+      .letter{
+
+        font-size:17px;
+        line-height:1.9;
+
+      }
+
+      .signature{
+
+        font-size:18px;
+
+      }
+
+      button{
+
+        width:100%;
+
+      }
+
+      #message{
+
+        font-size:22px;
+
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
   <nav>
+
     <h1>❤️ Untuk Awak</h1>
+
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="memories.html">Memories</a></li>
+      <li><a href="#">Memories</a></li>
       <li><a href="letter.html">Letter</a></li>
-      <li><a href="countdown.html">Countdown</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Gallery</a></li>
     </ul>
+
   </nav>
 
-  <section class="content">
-    <h2>Surat Untuk Awak 💌</h2>
+  <section class="main">
 
     <div class="letter-box">
-      <p>
-        Terima kasih sebab selalu ada walaupun penat dengan kelas,
-        assignment, dan kehidupan dekat asrama.
+
+      <p class="small-text">
+        SURAT KHAS UNTUK AWAK 💌
       </p>
 
-      <p>
-        Saya cuma nak awak tahu yang awak sangat bermakna untuk saya.
-      </p>
+      <h2>
+        Untuk Awak 🌸
+      </h2>
 
-      <p>
-        Walau jauh macam mana pun,
-        saya tetap bangga ada awak dalam hidup saya ❤️
-      </p>
+      <div class="letter">
 
-      <p class="signature">
-        — Dari orang yang selalu fikir pasal awak 🌙
-      </p>
+        <p>
+          Saya tak pandai sangat nak susun ayat romantik...
+          tapi saya cuma nak awak tahu yang awak sangat bermakna dalam hidup saya.
+        </p>
+
+        <p>
+          Terima kasih sebab selalu ada walaupun kadang-kadang saya annoying,
+          kuat merajuk,
+          atau susah nak faham.
+        </p>
+
+        <p>
+          Saya tahu kehidupan dekat asrama penat...
+          tapi saya harap website ni boleh buat awak senyum walaupun sikit ❤️
+        </p>
+
+        <p>
+          Walau jauh macam mana pun,
+          saya tetap akan support awak,
+          dengar cerita awak,
+          dan bangga dengan awak.
+        </p>
+
+      </div>
+
+      <div class="signature">
+        — daripada orang yang selalu rindu awak 🌙
+      </div>
+
+      <div class="love-btn">
+
+        <button onclick="loveMessage()">
+          Tekan Sini ❤️
+        </button>
+
+      </div>
+
+      <div id="message"></div>
+
     </div>
+
   </section>
+
+  <script>
+
+    function loveMessage(){
+
+      document.getElementById("message").innerHTML =
+      "Saya sayang awak lebih daripada yang awak tahu ❤️";
+
+    }
+
+  </script>
 
 </body>
 </html>
