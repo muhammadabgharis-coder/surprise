@@ -4,32 +4,367 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+
+      min-height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('gambar.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+
+      color:white;
+      overflow-x:hidden;
+
+    }
+
+    nav{
+
+      width:100%;
+      padding:20px 25px;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:15px;
+
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,0.08);
+
+    }
+
+    nav h1{
+      font-size:24px;
+    }
+
+    nav ul{
+
+      display:flex;
+      list-style:none;
+      gap:15px;
+      flex-wrap:wrap;
+
+    }
+
+    nav a{
+
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+      font-size:15px;
+
+    }
+
+    nav a:hover{
+      opacity:0.7;
+    }
+
+    .content{
+
+      width:100%;
+      max-width:1400px;
+      margin:auto;
+
+      padding:60px 20px;
+
+      text-align:center;
+
+    }
+
+    .content h2{
+
+      font-size:55px;
+      margin-bottom:20px;
+
+    }
+
+    .subtitle{
+
+      opacity:0.8;
+      margin-bottom:50px;
+      font-size:18px;
+
+    }
+
+    .gallery{
+
+      columns:4 250px;
+      column-gap:18px;
+
+    }
+
+    .photo{
+
+      position:relative;
+
+      margin-bottom:18px;
+      overflow:hidden;
+
+      border-radius:25px;
+
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+
+      border:1px solid rgba(255,255,255,0.12);
+
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+      transition:0.4s;
+
+    }
+
+    .photo:hover{
+
+      transform:translateY(-8px) scale(1.02);
+
+    }
+
+    .photo img{
+
+      width:100%;
+      display:block;
+      border-radius:25px;
+
+      transition:0.5s;
+
+    }
+
+    .photo:hover img{
+
+      transform:scale(1.06);
+
+    }
+
+    .overlay{
+
+      position:absolute;
+      bottom:0;
+      left:0;
+
+      width:100%;
+
+      padding:20px;
+
+      background:linear-gradient(
+      transparent,
+      rgba(0,0,0,0.75));
+
+      opacity:0;
+      transition:0.4s;
+
+    }
+
+    .photo:hover .overlay{
+
+      opacity:1;
+
+    }
+
+    .overlay p{
+
+      font-size:15px;
+      color:white;
+
+    }
+
+    .note{
+
+      margin-top:50px;
+      font-size:16px;
+      opacity:0.85;
+
+    }
+
+    @media(max-width:768px){
+
+      body{
+        background-attachment:scroll;
+      }
+
+      nav{
+
+        justify-content:center;
+        text-align:center;
+
+      }
+
+      nav h1{
+        width:100%;
+      }
+
+      nav ul{
+
+        justify-content:center;
+
+      }
+
+      .content h2{
+
+        font-size:40px;
+
+      }
+
+      .subtitle{
+
+        font-size:16px;
+
+      }
+
+      .gallery{
+
+        columns:2 140px;
+
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
   <nav>
+
     <h1>❤️ Untuk Awak</h1>
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="letter.html">Letter</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
+
   </nav>
 
   <section class="content">
+
     <h2>Gallery Kita 📸</h2>
 
+    <p class="subtitle">
+      semua moment kecil yang saya taknak lupa ✨
+    </p>
+
     <div class="gallery">
-      <img src="https://picsum.photos/300?1">
-      <img src="https://picsum.photos/300?2">
-      <img src="https://picsum.photos/300?3">
-      <img src="https://picsum.photos/300?4">
+
+      <div class="photo">
+        <img src="gambar1.jpg">
+        <div class="overlay">
+          <p>Moment paling manis ❤️</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar2.jpg">
+        <div class="overlay">
+          <p>Senyuman awak 🌸</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar3.jpg">
+        <div class="overlay">
+          <p>Hari yang tenang 🌙</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar4.jpg">
+        <div class="overlay">
+          <p>Saya suka gambar ni 🥺</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar5.jpg">
+        <div class="overlay">
+          <p>Pretty as always ✨</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar6.jpg">
+        <div class="overlay">
+          <p>Memory yang saya simpan ❤️</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar7.jpg">
+        <div class="overlay">
+          <p>Comel sangat 😭</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar8.jpg">
+        <div class="overlay">
+          <p>Favourite moment 🌸</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar9.jpg">
+        <div class="overlay">
+          <p>Awak cantik sangat 💌</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar10.jpg">
+        <div class="overlay">
+          <p>Saya rindu awak ❤️</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar11.jpg">
+        <div class="overlay">
+          <p>Moment kecil kita 🌷</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar12.jpg">
+        <div class="overlay">
+          <p>Happy sangat time ni ✨</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar13.jpg">
+        <div class="overlay">
+          <p>Forever favourite 🥺</p>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="gambar14.jpg">
+        <div class="overlay">
+          <p>Untuk awak ❤️</p>
+        </div>
+      </div>
+
     </div>
 
     <p class="note">
-      Nanti tukar gambar ni dengan gambar korang sendiri ❤️
+      tukar semua gambar ni dengan gambar korang sendiri ✨
     </p>
+
   </section>
 
 </body>
